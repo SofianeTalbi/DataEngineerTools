@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="site-header-logo">
+    <h1 class="text-center">
+        Bienvenue sur notre application web !
+    </h1>
+</div>
+
+<div class="row p-4">
+    <div class="card mb-4 ml-auto mr-auto" style="width: 95%;" data-aos = "fade-left">
+        <div class="card-body">
+            <div id = "chart2"></div>
+            <p>Cette année, dans le cadre de l’évaluation de l’unité Data Engineering, il nous a été demandé de créer une application web en nous basant sur le package Flask.
+            </p>
+            <p> Notre application devait récupérer des données sur le web. Soit des données Open Data soit des données scrapées grâce à ce que nous avons appris durant ce cours. Elle devait afficher les données de façon optimale avec la mise en place d’un moteur de recherche, de graphiques, etc. On devait également utiliser une ou plusieurs bases de données abordées dans ce cours et enfin fournir une documentation technique et fonctionnelle. Pour que notre application puisse être déployée partout, nous avons utilisé docker. </p>
+            <p> C’est donc ce qu’on a fait. Nous avons récupéré les données scrappées du site web Gamecash et nous les avons stockées sur MongoD. Vous pouvez ainsi visualiser les données à travers les graphiques en utilisant le moteur de recherche ou en naviguant sur notre application. </p>
+            <p> Pour la documentation technique et fonctionnelle nous vous invitons à consulter notre github en cliquant sur “Lien et contact” dans la barre de navigation en bleu.</p>
+        </div>
+    </div>
+    
+    
+
+</div>
+
+
+
+{% endblock %}
