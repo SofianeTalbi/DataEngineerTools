@@ -16,6 +16,14 @@ User guide
 -> Tout d'abord, il faut que vous cloniez le projet en effectuant la commande suivante sur votre terminal: 
 
         git clone https://github.com/SofianeTalbi/DataEngineerTools.git
+	
+-> Veuillez, avant de continuer, taper les commandes suivantes sur votre terminal:
+
+pip install flask
+
+pip install pandas
+
+pip install pandas
 				
 -> Ensuite, toujours sur votre terminal, il faut que vous fassiez:
 
@@ -69,21 +77,21 @@ le fichier main.css permet de gerer la police d'écriture ainsi que la couleur d
 le fichier soso.json a été créé en scrapant le site GameCash.fr. Pour scrapper le site, nous avons utilisé le dossier scrape présent sur le git. Dans ce dossier se trouve un fichier 
 game.py. Pour récuperer le fichier soso.json, on a réalisé les commandes suivantes sur notre terminale:
 
-cd EngineerTools
+1) cd EngineerTools
 
-cd 6Evaluation
+2) cd 6Evaluation
 
-cd Projet
+3) cd Projet
 
-cd scrape
+4) cd scrape
 
-cd gamecash
+5) cd gamecash
 
-cd gamecash
+6) cd gamecash
 
 puis
 
-scrapy crawl game -o soso.json
+7) scrapy crawl game -o soso.json
 
 Docker
 Le docker-compose.yml et le Dockerfile permettent de lancer une version du projet qui marche correctement. Le projet qui possède tout pour les installations, permet de lancer l'app.py automatiquement.
@@ -123,3 +131,5 @@ Contact
 Perrin Thomas: perrin.thomas@edu.esiee.fr
 
 Talbi Sofiane: talbi.sofiane@edu.esiee.fr
+
+lien vers notre projet: https://github.com/SofianeTalbi/DataEngineerTools.git
