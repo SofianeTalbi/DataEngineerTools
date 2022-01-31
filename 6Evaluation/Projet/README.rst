@@ -7,7 +7,7 @@ Cette année, dans le cadre de l’évaluation de l’unité Data Engineering, i
 
 Notre application devait récupérer des données sur le web. Soit des données Open Data soit des données scrapées grâce à ce que nous avons appris durant ce cours. Notre devait afficher les données de façon optimale avec la mise en place d’un moteur de recherche, de graphiques, etc. On devait également utiliser une ou plusieurs bases de données abordées dans ce cours et enfin fournir une documentation technique et fonctionnelle.
 
-C’est donc ce qu’on a fait.  Pour que notre application puisse être déployée partout, nous avons utilisé docker. Nous avons récupéré les données scrappées du site web Gamecash. Vous pouvez ainsi visualiser les données à travers les graphiques en utilisant le moteur de recherche ou en naviguant sur notre application.
+C’est donc ce qu’on a fait.  Pour que notre application puisse être déployée partout, nous avons utilisé Docker. Nous avons récupéré les données scrappées du site web Gamecash. Vous pouvez ainsi visualiser les données à travers les graphiques en utilisant le moteur de recherche ou en naviguant sur notre application.
 
 En ce qui concerne le site scrapé, gamecash.fr est un site de commerce électronique français crée en 2003 sur lequel sont vendus des jeux vidéo et films d'occasion. Nous avons choisis ce site car nous avions déjà réalisé des achats de jeux videos dessus. Nous voulions en savoir plus sur la vente des jeux vidéos.
 
@@ -40,10 +40,22 @@ cd Projet
 -> Enfin vous pourrez lancer l'application Web en tapant toujours sur votre terminal:
 
 python "run.py"
-				
--> Ouvrir un terminal, avec Docker installé, et se mettre dans le dossier du projet. Lancer le projet en faisant : docker-compose up
 
--> Aprés un chargement, il ne reste plus qu'à ouvrir un navigateur et aller à la page localhost:5001
+-> Vous pouvez ensuite visualiser notre application en tapant sur votre moteur de recherche:
+
+http://127.0.0.1:5000/
+
+*2eme méthode (avec Docker)*
+
+-> Tout d'abord, vous devez avoir Docker sur votre machine
+
+-> Aprés que vous vous soyez mis dans le dossier du projet, lancez la commande suivante:
+
+docker-compose up
+
+-> Vous pouvez acceder à notre application web en tapant sur votre navigateur:
+
+localhost:5001
 
 Developper Guide
 ----------
