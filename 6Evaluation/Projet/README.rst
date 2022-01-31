@@ -23,7 +23,7 @@ pip install flask
 
 pip install pandas
 
-pip install pandas
+pip install pd
 				
 -> Ensuite, toujours sur votre terminal, il faut que vous fassiez:
 
