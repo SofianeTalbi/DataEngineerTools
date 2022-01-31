@@ -47,6 +47,8 @@ http://127.0.0.1:5000/
 
 *2eme méthode (avec Docker)*
 
+Pour Docker, nous avons modifié les fichier Dockerfile et docker-compose.yml
+
 -> Tout d'abord, vous devez avoir Docker sur votre machine
 
 -> Aprés que vous vous soyez mis dans le dossier du projet, lancez la commande suivante:
