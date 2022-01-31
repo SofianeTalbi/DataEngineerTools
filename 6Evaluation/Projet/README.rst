@@ -91,21 +91,21 @@ le fichier main.css permet de gerer la police d'écriture ainsi que la couleur d
 le fichier soso.json a été créé en scrapant le site GameCash.fr. Pour scrapper le site, nous avons utilisé le dossier scrape que nous avons mis sur le git. Dans ce dossier, se trouve un fichier 
 game.py. Pour récuperer le fichier soso.json, on a réalisé les commandes suivantes sur notre terminale:
 
-1) cd EngineerTools
+cd EngineerTools
 
-2) cd 6Evaluation
+cd 6Evaluation
 
-3) cd Projet
+cd Projet
 
-4) cd scrape
+cd scrape
 
-5) cd gamecash
+cd gamecash
 
-6) cd gamecash
+cd gamecash
 
 puis
 
-7) scrapy crawl game -o soso.json
+scrapy crawl game -o soso.json
 
 Rapport d'analyse
 ----------
