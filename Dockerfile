@@ -1,14 +1,11 @@
 FROM python:3.8
 
-RUN mkdir /home/dev/ && mkdir /home/dev/code/
+COPY requirements.txt /home/
+RUN pip3 install -r /home/requirements.txt
 
-WORKDIR /home/dev/code/
+WORKDIR /home
+#COPY . .
 
-#ENV http_proxy http://147.215.1.189:3128
-#ENV https_proxy http://147.215.1.189:3128
-
-COPY . .
-RUN  pip install --upgrade pip &&  pip install pipenv && pipenv install --skip-lock
-
-CMD ["pipenv", "run", "jupyter", "notebook", "--ip=0.0.0.0", "--no-browser", "--allow-root", "--NotebookApp.token=''"]
-#CMD ["/bin/bash"]
+ENV FLASK_APP=run
+ENV FLASK_DEBUG=1
+CMD  ["flask", "run", "--host", "0.0.0.0", "--port", "5000"]
