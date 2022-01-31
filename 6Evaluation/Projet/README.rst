@@ -5,11 +5,11 @@ Contexte
 
 Cette année, dans le cadre de l’évaluation de l’unité Data Engineering, il nous a été demandé de créer une application web en nous basant sur le package Flask.
 
-Notre application devait récupérer des données sur le web. Soit des données Open Data soit des données scrapées grâce à ce que nous avons appris durant ce cours. Notre devait afficher les données de façon optimale avec la mise en place d’un moteur de recherche, de graphiques, etc. On devait également utiliser une ou plusieurs bases de données abordées dans ce cours et enfin fournir une documentation technique et fonctionnelle.
+Notre application devait récupérer des données sur le web. Soit des données Open Data soit des données scrapées grâce à ce que nous avons appris durant ce cours. Notre application devait afficher les données de façon optimale avec la mise en place d’un moteur de recherche, de graphiques, etc. On devait également utiliser une ou plusieurs bases de données abordées dans ce cours et enfin fournir une documentation technique et fonctionnelle.
 
-C’est donc ce qu’on a fait.  Pour que notre application puisse être déployée partout, nous avons utilisé Docker. Nous avons récupéré les données scrappées du site web Gamecash. Vous pouvez ainsi visualiser les données à travers les graphiques en utilisant le moteur de recherche ou en naviguant sur notre application.
+C’est donc ce qu’on a fait. Pour que notre application puisse être déployée partout, nous avons utilisé Docker. Nous avons récupéré les données scrappées du site web Gamecash. Vous pouvez ainsi visualiser les données à travers les graphiques en utilisant le moteur de recherche ou en naviguant sur notre application.
 
-En ce qui concerne le site scrapé, gamecash.fr est un site de commerce électronique français crée en 2003 sur lequel sont vendus des jeux vidéo et films d'occasion. Nous avons choisis ce site car nous avions déjà réalisé des achats de jeux videos dessus. Nous voulions en savoir plus sur la vente des jeux vidéos.
+En ce qui concerne le site scrapé, gamecash.fr est un site de commerce électronique français crée en 2003 sur lequel sont vendus des jeux vidéo et films d'occasions. Nous avons choisi ce site car nous avions déjà réalisé des achats de jeux videos dessus. Nous voulions en savoir plus sur la vente des jeux vidéos.
 
 User guide
 ----------
@@ -78,7 +78,7 @@ base de données par la suite.
 
 • base.html permet l'affichage de la page "Accueil"
 
-• index.html permet l'affichage de la page "Analyse des données"
+• analyse.html permet l'affichage de la page "Analyse des données"
 
 • propos.html permet l'affichage de la page "A propos de GameCash". Il est relié et affiche le fichier logo.png.
 
@@ -86,7 +86,7 @@ base de données par la suite.
 
 le fichier main.css permet de gerer la police d'écriture ainsi que la couleur du texte et du fond.
 
-le fichier soso.json a été créé en scrapant le site GameCash.fr. Pour scrapper le site, nous avons utilisé le dossier scrape présent sur le git. Dans ce dossier se trouve un fichier 
+le fichier soso.json a été créé en scrapant le site GameCash.fr. Pour scrapper le site, nous avons utilisé le dossier scrape que nous avons mis sur le git. Dans ce dossier, se trouve un fichier 
 game.py. Pour récuperer le fichier soso.json, on a réalisé les commandes suivantes sur notre terminale:
 
 1) cd EngineerTools
@@ -105,9 +105,6 @@ puis
 
 7) scrapy crawl game -o soso.json
 
-Docker
-Le docker-compose.yml et le Dockerfile permettent de lancer une version du projet qui marche correctement. Le projet qui possède tout pour les installations, permet de lancer l'app.py automatiquement.
-
 Rapport d'analyse
 ----------
 *Conclusion*
@@ -122,7 +119,9 @@ Ce que l'on sait maintenant:
 
 • Les préférences des éditeurs en termes de type de jeu crée
 
-• Le prix des jeux en fonction de l'éditeurs ou de l'année
+• Le prix des jeux en fonction de l'éditeur
+
+• Le nombre de jeu présent sur le site par année
 
 Ce projet nous a permis d'apprendre également:
 
